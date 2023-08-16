@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <form action="#" method="post" class="search">
+          <input
+            type="search"
+            name="search"
+            class="search__input"
+            placeholder="Search hotels"
+            list="sugg"
+          />
+          <button class="search__button">
+            <div class="search__icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </button>
+          <datalist id="sugg">
+            <option value="hotel 1">hotel 1</option>
+            <option value="hotel 2">hotel 2</option>
+            <option value="hotel 3">hotel 3</option>
+            <option value="hotel 4">hotel 4</option>
+            <option value="hotel 5">hotel 5</option>
+            <option value="hotel 6">hotel 6</option>
+            <option value="hotel 7">hotel 7</option>
+            <option value="hotel 8">hotel 8</option>
+            <option value="hotel 9">hotel 9</option>
+            <option value="hotel 10">hotel 10</option>
+            <option value="hotel 11">hotel 11</option>
+            <option value="hotel 12">hotel 12</option>
+          </datalist>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <div class="user-nav__icon">
+              <i class="fa-solid fa-bookmark"></i>
+              <div class="user-nav__bookmarks">
+                <ul class="user-nav__list">
+                  <li class="user-nav__item"><a href="#">Bookmarks</a></li>
+                  <li class="user-nav__item"><a href="#">Settings</a></li>
+                </ul>
+              </div>
+            </div>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <div class="user-nav__icon">
+              <i class="fa-solid fa-comments"></i>
+              <div class="user-nav__messages">
+                <ul class="user-nav__messages-list">
+                  <li class="user-nav__messages-item">
+                    <div class="user-nav__messages-photo">
+                      <img src="img/user-6.jpg" alt="">
+                    </div>
+                    <div class="user-nav__messages-text">
+                      <p class="name">Ramiz Alsalem</p>
+                      <p class="message">Hello there, I want some help :').</p>
+                    </div>
+                    <span class="user-nav__messages-time">7:54 PM</span>
+                  </li>
+                  <li class="user-nav__messages-item">
+                    <div class="user-nav__messages-photo">
+                      <img src="img/user-2.jpg" alt="">
+                    </div>
+                    <div class="user-nav__messages-text">
+                      <p class="name">Mark Thomas</p>
+                      <p class="message">Ok I will be there soon.</p>
+                    </div>
+                    <span class="user-nav__messages-time">4:01 PM</span>
+                  </li>
+                  <li class="user-nav__messages-item">
+                    <div class="user-nav__messages-photo">
+                      <img src="img/user-3.jpg" alt="">
+                    </div>
+                    <div class="user-nav__messages-text">
+                      <p class="name">Mohammed Sayed</p>
+                      <p class="message">This much better, thank you.</p>
+                    </div>
+                    <span class="user-nav__messages-time">10:30 AM</span>
+                  </li>
+                  <li class="user-nav__messages-item">
+                    <div class="user-nav__messages-photo">
+                      <img src="img/user-4.jpg" alt="">
+                    </div>
+                    <div class="user-nav__messages-text">
+                      <p class="name">Nick Smith</p>
+                      <p class="message">Okey</p>
+                    </div>
+                    <span class="user-nav__messages-time">Yestarday 8:58 PM</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span class="user-nav__notification">13</span>
+          </div>
+          <div class="user-nav__user">
+            <img src="img/user.jpg" alt="user" class="user-nav__user-photo" />
+            <span class="uesr-nav__user-name">Ramiz</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <div class="side-nav__icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <span>Hotel</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <div class="side-nav__icon">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <span>Flight</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <div class="side-nav__icon">
+                  <i class="fa-solid fa-key"></i>
+                </div>
+                <span>Car rental</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <div class="side-nav__icon">
+                  <i class="fa-regular fa-map"></i>
+                </div>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">&copy; 2023 by trillo, All rights reserved.</div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Las Palmas</h1>
+            <div class="overview__stars">
+              <div class="overview__icon-star">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="overview__icon-star">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="overview__icon-star">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="overview__icon-star">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="overview__icon-star">
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <div class="overview__location">
+              <div class="overview__icon-location">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <button class="btn-inline">Albufeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets Allowed</li>
+                <li class="list__item">We Speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Aug 15rd, 2023</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mark Thomas</p>
+                    <p class="review__user-date">Sept 13th, 2022</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
